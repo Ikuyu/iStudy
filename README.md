@@ -1,0 +1,2 @@
+# iStudy
+TUI Flashcards Application
