@@ -1,6 +1,6 @@
 # 1. ABOUT iSTUDY
 
-iStudy — where the 'i' stands for individual (or I) — is a TUI study-aid dashboard. You decide what to learn and when to learn it. Flashcards are only marked as 'learned' when you say they are. With several study methods to choose from, you can pick the one that works best for you.
+iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard study-aid. You decide what to learn and when to learn it. Flashcards are only marked as 'learned' when you say they are. With several study methods to choose from, you can pick the one that works best for you.
 
 # 2. USAGE
 
