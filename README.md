@@ -17,6 +17,8 @@ iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard stu
 
 iStudy cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
 
+iTerm2 specific: EXPLICITLY DISABLE THE EXPERIMENTAL-RTL-USE FEATURE.
+
 2. To use Alt-V on macOS, configure the Option key as a Meta key in your terminal emulator.
 
 - In Ghostty, add the following line to your configuration:  `macos-option-as-meta = left`
@@ -24,7 +26,6 @@ iStudy cannot run in the default macOS Terminal app because it requires a modern
 
 
 # 4. TEXT-EDITING KEYBOARD SHORTCUTS
-
 
 ## 4.1 Editing
 Control-X: cut the selected text and copy it to the system clipboard.
@@ -57,7 +58,7 @@ Control-K: delete text from the right of the insertion point to the end of the l
 
 ## 4.4 Selecting Text
 
-Control-A: select all text.
+Shift-Control-A: select all text.
 
 Shift-Control-F[^1], Shift-Right Arrow: extend text selection one character to the right.
 Shift-Control-B[^1], Shift-Left Arrow: extend text selection one character to the left.
