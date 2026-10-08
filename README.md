@@ -15,60 +15,62 @@ iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard stu
 - iTerm2
 - Ghostty.
 
-iStudy cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
-
-iTerm2 specific: EXPLICITLY DISABLE THE EXPERIMENTAL-RTL-USE FEATURE.
+It cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
 
 2. To use Alt-V on macOS, configure the Option key as a Meta key in your terminal emulator.
 
-- In Ghostty, add the following line to your configuration:  `macos-option-as-meta = left`
+- In Ghostty, add the following line to your configuration:  `macos-⌥as-meta = left`
 - In iTerm2, go to: **Settings → Profiles → Keys**. Then set `Left Option Key` to `Esc+`.
 
+In iTerm2, the usual macOS keyboard shortcuts also work when iStudy.itermkeymap is imported via **Settings → Profiles → Keys → Key Bindings → Presets…**. Ghostty may also support these key combinations; however, this has not yet been tested.
 
-# 4. TEXT-EDITING KEYBOARD SHORTCUTS
+# 4. Keyboard Shortcuts for Input Fields
 
 ## 4.1 Editing
-Control-X: cut the selected text and copy it to the system clipboard.
-Control-Y, Shift-Control-Z: redo (Shift-Ctrl-Z doesn't work in all terminals).
-Control-Z: undo.
-Control-T: swap the character behind the insertion point with the character in front of the insertion point.
+
+| Shortcut | Action |
+|---|---|
+| `^x` | Cut the selected text and copy it to the system clipboard. |
+| `^y`, `^⇧Z`[^1] | Redo (`^⇧z` doesn't work in all terminals). |
+| `^z` | Undo. |
+| `^t` | Swap the character behind the insertion point with the character in front of it. |
 
 ## 4.2 Navigation
-Control-F, Right Arrow: move one character forwards.
-Control-B, Left Arrow: move one character backwards.
 
-Fn-Up Arrow, Fn-Left Arrow, Option-Up Arrow, Control-A: move the insertion point to the beginning of the line.
-Fn-Down Arrow, Fn-Right Arrow, Option-Down Arrow, Control-E: move the insertion point to the end of the line.
-
-Option-Left Arrow: move the insertion point to the beginning of the previous word.
-Option-Right Arrow: move the insertion point to the end of the next word.
-
-Control-L: centre the insertion point in the text.
-
-TAB, Control-P: next inputfield.
-BACKTAB, Control-N: previous inputfield.
+| Shortcut | Action |
+|---|---|
+| `^f`, `→` | Move one character forwards. |
+| `^b`, `←` | Move one character backwards. |
+| `Fn↑`, `Fn←`, `⌥↑`, `^a` | Move the insertion point to the beginning of the line. |
+| `Fn↓`, `Fn→`, `⌥↓`, `^e` | Move the insertion point to the end of the line. |
+| `⌥←` | Move the insertion point to the beginning of the previous word. |
+| `⌥→` | Move the insertion point to the end of the next word. |
+| `^l` | Centre the insertion point in the text. |
+| `TAB`, `^p` | Move to the next input field. |
+| `BACKTAB`, `^n` | Move to the previous input field. |
 
 ## 4.3 Removing Text
 
-Ctrl-W, Option-Backspace: delete the word to the left of the insertion point.
-Fn-Option-Backspace: delete the word to the right of the insertion point.
-Control-H, Backspace: delete the character to the left of the insertion point.
-Control-D, Fn-Backspace: delete the character to the right of the insertion point.
-Control-K: delete text from the right of the insertion point to the end of the line.
+| Shortcut | Action |
+|---|---|
+| `^w`, `⌥⌫` | Delete the word to the left of the insertion point. |
+| `Fn⌥⌫` | Delete the word to the right of the insertion point. |
+| `^h`, `⌫` | Delete the character to the left of the insertion point. |
+| `^d`, `Fn⌫` | Delete the character to the right of the insertion point. |
+| `^k` | Delete the text from the insertion point to the end of the line. |
+| `^u` | Delete the text from the insertion point to the beginning of the line. |
 
 ## 4.4 Selecting Text
 
-Shift-Control-A: select all text.
-
-Shift-Control-F[^1], Shift-Right Arrow: extend text selection one character to the right.
-Shift-Control-B[^1], Shift-Left Arrow: extend text selection one character to the left.
-
-Option-Shift-Left Arrow: extend text selection to the beginning of the current word, then to the beginning of the following word if pressed again.
-Option-Shift-Right Arrow: extend text selection to the end of the current word, then to the end of the following word if pressed again.
-
-Shift-Up Arrow, Fn-Shift-Up Arrow[^1], Option-Shift-Up Arrow: extend text selection to the beginning of the line.
-Shift-Down Arrow, Fn-Shift-Down Arrow[^1], Option-Shift-Down Arrow: extend text selection to the end of the line.
-
-Shift+Control+L[^1]: extend the text selection to the centre of the text.
+| Shortcut | Action |
+|---|---|
+| `^⇧a` | Select all text. |
+| `^⇧f`, `⇧→` | Extend the selection one character to the right. |
+| `^⇧b`, `⇧←` | Extend the selection one character to the left. |
+| `⌥⇧←` | Extend the selection to the beginning of the current word. Press again to extend it to the beginning of the previous word. |
+| `⌥⇧→` | Extend the selection to the end of the current word. Press again to extend it to the end of the next word. |
+| `⇧↑`, `Fn⇧↑`, `⌥⇧↑` | Extend the selection to the beginning of the line. |
+| `⇧↓`, `Fn⇧↓`, `⌥⇧↓` | Extend the selection to the end of the line. |
+| `^⇧l` | Extend the selection to the centre of the text. |
 
 [^1]: This keyboard shortcut works by default in Ghostty. To enable it in iTerm2, import `istudy.itermkeymap` under **Settings → Profiles → Keys → Key Bindings → Presets…**.
