@@ -24,6 +24,8 @@ It cannot run in the default macOS Terminal app because it requires a modern ter
 
 In iTerm2, the usual macOS keyboard shortcuts also work when iStudy.itermkeymap is imported via **Settings → Profiles → Keys → Key Bindings → Presets…**. Ghostty may also support these key combinations; however, this has not yet been tested.
 
+If you want to use Command+1 through Command+4 (study sessions) in addition to Alt+1 through Alt+4, go to iTerm2 → Settings → Keys → Navigation Shortcuts → Shortcut to activate a tab and change the modifier from Command to a different key combination.
+
 # 4. Keyboard Shortcuts for Input Fields
 
 ## 4.1 Editing
