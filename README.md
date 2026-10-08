@@ -1,6 +1,6 @@
 # 1. ABOUT iSTUDY
 
-iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard study-aid. You decide what to learn and when to learn it. Flashcards are only marked as 'learned' when you say they are. With several study methods to choose from, you can pick the one that works best for you.
+iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard study-aid. You decide what to learn and when to learn it. Flashcards are only marked as 'learned' when you say they are. With several study methods to choose from, you can pick the one that works best for you. iStudy also has a built-in help system; press **?** in the application to open it.
 
 # 2. USAGE
 
@@ -17,7 +17,7 @@ iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard stu
 
 It cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
 
-2. To use Alt-V on macOS, configure the Option key as a Meta key in your terminal emulator.
+2. To use **Alt-V** on macOS, configure the Option key as a Meta key in your terminal emulator.
 
 - In Ghostty, add the following line to your configuration:  `macos-⌥as-meta = left`
 - In iTerm2, go to: **Settings → Profiles → Keys**. Then set `Left Option Key` to `Esc+`.
