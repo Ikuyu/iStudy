@@ -15,9 +15,9 @@ iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard stu
 - iTerm2
 - Ghostty.
 
-It cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
+The application cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
 
-2. To use **Alt-V** on macOS, configure the Option key as a Meta key in your terminal emulator.
+2. To use **Alt-V** on macOS, configure the `Option key as a Meta key` in your terminal emulator:
 
 - In Ghostty, add the following line to your configuration:  `macos-⌥as-meta = left`
 - In iTerm2, go to: **Settings → Profiles → Keys**. Then set `Left Option Key` to `Esc+`.
@@ -33,7 +33,7 @@ If you want to use Command+1 through Command+4 (study sessions) in addition to A
 | Shortcut | Action |
 |---|---|
 | `Control+X` | Cut the selected text and copy it to the system clipboard. |
-| `Control+Y`, `Control+Shift+Z`[^1] | Redo (`Control+Shift+Z` doesn't work in all terminals). |
+| `Control+R`, `Control+Y`, `Control+Shift+Z`[^1] | Redo (`Control+Shift+Z` doesn't work in all terminals). |
 | `Control+Z` | Undo. |
 | `Control+T` | Swap the character behind the insertion point with the character in front of it. |
 
