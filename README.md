@@ -43,10 +43,10 @@ If you want to use Command+1 through Command+4 (study sessions) in addition to A
 |---|---|
 | `Control+F`, `→` | Move one character forwards. |
 | `Control+B`, `←` | Move one character backwards. |
-| `Fn↑`, `Fn←`, `⌥↑`, `Control+A` | Move the insertion point to the beginning of the line. |
-| `Fn↓`, `Fn→`, `⌥↓`, `Control+E` | Move the insertion point to the end of the line. |
-| `⌥←` | Move the insertion point to the beginning of the previous word. |
-| `⌥→` | Move the insertion point to the end of the next word. |
+| `Fn↑`, `Fn←`, `Option+↑`, `Control+A` | Move the insertion point to the beginning of the line. |
+| `Fn↓`, `Fn→`, `Option+↓`, `Control+E` | Move the insertion point to the end of the line. |
+| `Option+←` | Move the insertion point to the beginning of the previous word. |
+| `Option+→` | Move the insertion point to the end of the next word. |
 | `Control+L` | Centre the insertion point in the text. |
 | `Tab`, `Control+P` | Move to the next input field. |
 | `Backtab`, `Control+N` | Move to the previous input field. |
@@ -55,8 +55,8 @@ If you want to use Command+1 through Command+4 (study sessions) in addition to A
 
 | Shortcut | Action |
 |---|---|
-| `Control+W`, `⌥+Backspace` | Delete the word to the left of the insertion point. |
-| `Fn⌥+Backspace` | Delete the word to the right of the insertion point. |
+| `Control+W`, `Option++Backspace` | Delete the word to the left of the insertion point. |
+| `Fn+Option+Backspace` | Delete the word to the right of the insertion point. |
 | `Control+H`, `Backspace` | Delete the character to the left of the insertion point. |
 | `Control+D`, `Fn+Backspace` | Delete the character to the right of the insertion point. |
 | `Control+K` | Delete the text from the insertion point to the end of the line. |
@@ -69,10 +69,10 @@ If you want to use Command+1 through Command+4 (study sessions) in addition to A
 | `Control+Shift+A` | Select all text. |
 | `Control+Shift+F`, `Shift+→` | Extend the selection one character to the right. |
 | `Control+Shift+B`, `Shift+←` | Extend the selection one character to the left. |
-| `⌥Shift+←` | Extend the selection to the beginning of the current word. Press again to extend it to the beginning of the previous word. |
-| `⌥Shift+→` | Extend the selection to the end of the current word. Press again to extend it to the end of the next word. |
-| `Shift+↑`, `Fn+Shift+↑`, `⌥Shift+↑` | Extend the selection to the beginning of the line. |
-| `Shift+↓`, `Fn+Shift+↓`, `⌥Shift+↓` | Extend the selection to the end of the line. |
+| `Option+Shift+←` | Extend the selection to the beginning of the current word. Press again to extend it to the beginning of the previous word. |
+| `Option+Shift+→` | Extend the selection to the end of the current word. Press again to extend it to the end of the next word. |
+| `Shift+↑`, `Fn+Shift+↑`, `Option+Shift+↑` | Extend the selection to the beginning of the line. |
+| `Shift+↓`, `Fn+Shift+↓`, `Option+Shift+↓` | Extend the selection to the end of the line. |
 | `Control+Shift+L` | Extend the selection to the centre of the text. |
 
 [^1]: This keyboard shortcut works by default in Ghostty. To enable it in iTerm2, import `istudy.itermkeymap` under **Settings → Profiles → Keys → Key Bindings → Presets…**.
