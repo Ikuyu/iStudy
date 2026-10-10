@@ -75,6 +75,37 @@ If you want to use Command+1 through Command+4 (study sessions) in addition to A
 | `Shift+↓`, `Fn+Shift+↓`, `Option+Shift+↓` | Extend the selection to the end of the line. |
 | `Control+Shift+L` | Extend the selection to the centre of the text. |
 
+[^1]: In iTerm2, support for bidirectional (RTL) characters can be enabled or disabled. iStudy manages RTL support independently of this setting.
+[^2]: `Control+Shift+Z` works by default in Ghostty. To enable it in iTerm2, import `istudy.itermkeymap` via **Settings → Profiles → Keys → Key Bindings → Presets…**.
+| `Option+→` | Move the insertion point to the end of the next word. |
+| `Control+L` | Centre the insertion point in the text. |
+| `Tab`, `Control+P` | Move to the next input field. |
+| `Backtab`, `Control+N` | Move to the previous input field. |
+
+## 4.3 Removing Text
+
+| Shortcut | Action |
+|---|---|
+| `Control+W`, `Option++Backspace` | Delete the word to the left of the insertion point. |
+| `Fn+Option+Backspace` | Delete the word to the right of the insertion point. |
+| `Control+H`, `Backspace` | Delete the character to the left of the insertion point. |
+| `Control+D`, `Fn+Backspace` | Delete the character to the right of the insertion point. |
+| `Control+K` | Delete the text from the insertion point to the end of the line. |
+| `Control+U` | Delete the text from the insertion point to the beginning of the line. |
+
+## 4.4 Selecting Text
+
+| Shortcut | Action |
+|---|---|
+| `Control+A`, `Control+Shift+A` | Select all text. |
+| `Control+Shift+F`, `Shift+→` | Extend the selection one character to the right. |
+| `Control+Shift+B`, `Shift+←` | Extend the selection one character to the left. |
+| `Option+Shift+←` | Extend the selection to the beginning of the current word. Press again to extend it to the beginning of the previous word. |
+| `Option+Shift+→` | Extend the selection to the end of the current word. Press again to extend it to the end of the next word. |
+| `Shift+↑`, `Fn+Shift+↑`, `Option+Shift+↑` | Extend the selection to the beginning of the line. |
+| `Shift+↓`, `Fn+Shift+↓`, `Option+Shift+↓` | Extend the selection to the end of the line. |
+| `Control+Shift+L` | Extend the selection to the centre of the text. |
+
 [^1]: In iTerm2, support for bidirectional (RTL) characters can be enabled or disabled. iStudy manages RTL support itself, regardless of whether this feature is enabled in iTerm2.
 [^2]: This keyboard shortcut works by default in Ghostty. To enable it in iTerm2, import `istudy.itermkeymap` under **Settings → Profiles → Keys → Key Bindings → Presets…**.
 
