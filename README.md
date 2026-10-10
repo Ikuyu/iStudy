@@ -12,10 +12,71 @@ iStudy — where the 'i' stands for individual (or I) — is a TUI dashboard stu
 
 1. iStudy has been tested in the following terminal emulators:
 
-- iTerm2
+- iTerm2[^1]
 - Ghostty.
 
 The application cannot run in the default macOS Terminal app because it requires a modern terminal emulator. Its user interface is built with Ratatui Ruby, which provides Ruby bindings for Ratatui, a Rust-based TUI library.
+
+2. To use **Alt-V** on macOS, configure the `Option key as a Meta key` in your prefered terminal emulator:
+
+- In Ghostty, add the following line to your configuration:  `macos-⌥as-meta = left`
+- In iTerm2, go to: **Settings → Profiles → Keys**. Then set `Left Option Key` to `Esc+`.
+
+In iTerm2, the usual macOS keyboard shortcuts also work when iStudy.itermkeymap is imported via **Settings → Profiles → Keys → Key Bindings → Presets…**. Ghostty may also support these key combinations; however, this has not yet been tested.
+
+If you want to use Command+1 through Command+4 (study sessions) in addition to Alt+1 through Alt+4, go to **Settings → Keys → Navigation Shortcuts → Shortcut to activate a tab** and change the modifier from Command to a different key combination.
+
+# 4. Keyboard Shortcuts for Input Fields
+
+## 4.1 Editing
+
+| Shortcut | Action |
+|---|---|
+| `Control+X` | Cut the selected text and copy it to the system clipboard. |
+| `Control+Y`, `Control+Shift+Z`[^2] | Redo (`Control+Shift+Z` doesn't work in all terminals). |
+| `Control+Z` | Undo. |
+| `Control+T` | Swap the character behind the insertion point with the character in front of it. |
+
+## 4.2 Navigation
+
+| Shortcut | Action |
+|---|---|
+| `Control+F`, `→` | Move one character forwards. |
+| `Control+B`, `←` | Move one character backwards. |
+| `Fn↑`, `Fn←`, `Option+↑`, `Control+A` | Move the insertion point to the beginning of the line. |
+| `Fn↓`, `Fn→`, `Option+↓`, `Control+E` | Move the insertion point to the end of the line. |
+| `Option+←` | Move the insertion point to the beginning of the previous word. |
+| `Option+→` | Move the insertion point to the end of the next word. |
+| `Control+L` | Centre the insertion point in the text. |
+| `Tab`, `Control+P` | Move to the next input field. |
+| `Backtab`, `Control+N` | Move to the previous input field. |
+
+## 4.3 Removing Text
+
+| Shortcut | Action |
+|---|---|
+| `Control+W`, `Option++Backspace` | Delete the word to the left of the insertion point. |
+| `Fn+Option+Backspace` | Delete the word to the right of the insertion point. |
+| `Control+H`, `Backspace` | Delete the character to the left of the insertion point. |
+| `Control+D`, `Fn+Backspace` | Delete the character to the right of the insertion point. |
+| `Control+K` | Delete the text from the insertion point to the end of the line. |
+| `Control+U` | Delete the text from the insertion point to the beginning of the line. |
+
+## 4.4 Selecting Text
+
+| Shortcut | Action |
+|---|---|
+| `Control+A`, `Control+Shift+A` | Select all text. |
+| `Control+Shift+F`, `Shift+→` | Extend the selection one character to the right. |
+| `Control+Shift+B`, `Shift+←` | Extend the selection one character to the left. |
+| `Option+Shift+←` | Extend the selection to the beginning of the current word. Press again to extend it to the beginning of the previous word. |
+| `Option+Shift+→` | Extend the selection to the end of the current word. Press again to extend it to the end of the next word. |
+| `Shift+↑`, `Fn+Shift+↑`, `Option+Shift+↑` | Extend the selection to the beginning of the line. |
+| `Shift+↓`, `Fn+Shift+↓`, `Option+Shift+↓` | Extend the selection to the end of the line. |
+| `Control+Shift+L` | Extend the selection to the centre of the text. |
+
+[^1]: In iTerm2, support for bidirectional (RTL) characters can be enabled or disabled. iStudy manages RTL support itself, regardless of whether this feature is enabled in iTerm2.
+[^2]: This keyboard shortcut works by default in Ghostty. To enable it in iTerm2, import `istudy.itermkeymap` under **Settings → Profiles → Keys → Key Bindings → Presets…**.
 
 2. To use **Alt-V** on macOS, configure the `Option key as a Meta key` in your terminal emulator:
 
